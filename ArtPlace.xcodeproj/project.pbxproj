@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		98202C591F3DA43400BC68CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98202C581F3DA43400BC68CC /* main.m */; };
 		98202C5C1F3DA43400BC68CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98202C5B1F3DA43400BC68CC /* AppDelegate.m */; };
-		98202C5F1F3DA43400BC68CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98202C5E1F3DA43400BC68CC /* ViewController.m */; };
+		98202C5F1F3DA43400BC68CC /* YMAArtPlaceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98202C5E1F3DA43400BC68CC /* YMAArtPlaceVC.m */; };
 		98202C621F3DA43400BC68CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98202C601F3DA43400BC68CC /* Main.storyboard */; };
 		98202C641F3DA43400BC68CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98202C631F3DA43400BC68CC /* Assets.xcassets */; };
 		98202C671F3DA43400BC68CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98202C651F3DA43400BC68CC /* LaunchScreen.storyboard */; };
+		98202C701F3DA5FC00BC68CC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98202C6F1F3DA5FC00BC68CC /* MapKit.framework */; };
+		98202C721F3DA61400BC68CC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98202C711F3DA61400BC68CC /* CoreLocation.framework */; };
+		98202C741F3DB3C400BC68CC /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = 98202C731F3DB3C400BC68CC /* PublicArt.json */; };
+		98202C7A1F3DC42B00BC68CC /* YMAPinAnnotationDetailed.m in Sources */ = {isa = PBXBuildFile; fileRef = 98202C791F3DC42B00BC68CC /* YMAPinAnnotationDetailed.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +24,17 @@
 		98202C581F3DA43400BC68CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98202C5A1F3DA43400BC68CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		98202C5B1F3DA43400BC68CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		98202C5D1F3DA43400BC68CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		98202C5E1F3DA43400BC68CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		98202C5D1F3DA43400BC68CC /* YMAArtPlaceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAArtPlaceVC.h; sourceTree = "<group>"; };
+		98202C5E1F3DA43400BC68CC /* YMAArtPlaceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAArtPlaceVC.m; sourceTree = "<group>"; };
 		98202C611F3DA43400BC68CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98202C631F3DA43400BC68CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98202C661F3DA43400BC68CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98202C681F3DA43400BC68CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98202C6F1F3DA5FC00BC68CC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		98202C711F3DA61400BC68CC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		98202C731F3DB3C400BC68CC /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicArt.json; sourceTree = "<group>"; };
+		98202C781F3DC42B00BC68CC /* YMAPinAnnotationDetailed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMAPinAnnotationDetailed.h; sourceTree = "<group>"; };
+		98202C791F3DC42B00BC68CC /* YMAPinAnnotationDetailed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMAPinAnnotationDetailed.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98202C721F3DA61400BC68CC /* CoreLocation.framework in Frameworks */,
+				98202C701F3DA5FC00BC68CC /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,7 @@
 			children = (
 				98202C561F3DA43400BC68CC /* ArtPlace */,
 				98202C551F3DA43400BC68CC /* Products */,
+				98202C6E1F3DA5FB00BC68CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +72,10 @@
 			children = (
 				98202C5A1F3DA43400BC68CC /* AppDelegate.h */,
 				98202C5B1F3DA43400BC68CC /* AppDelegate.m */,
-				98202C5D1F3DA43400BC68CC /* ViewController.h */,
-				98202C5E1F3DA43400BC68CC /* ViewController.m */,
+				98202C5D1F3DA43400BC68CC /* YMAArtPlaceVC.h */,
+				98202C5E1F3DA43400BC68CC /* YMAArtPlaceVC.m */,
+				98202C781F3DC42B00BC68CC /* YMAPinAnnotationDetailed.h */,
+				98202C791F3DC42B00BC68CC /* YMAPinAnnotationDetailed.m */,
 				98202C601F3DA43400BC68CC /* Main.storyboard */,
 				98202C631F3DA43400BC68CC /* Assets.xcassets */,
 				98202C651F3DA43400BC68CC /* LaunchScreen.storyboard */,
@@ -74,9 +88,19 @@
 		98202C571F3DA43400BC68CC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				98202C731F3DB3C400BC68CC /* PublicArt.json */,
 				98202C581F3DA43400BC68CC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98202C6E1F3DA5FB00BC68CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98202C711F3DA61400BC68CC /* CoreLocation.framework */,
+				98202C6F1F3DA5FC00BC68CC /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +129,7 @@
 		98202C4C1F3DA43400BC68CC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YMA;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Mikhail Yaskou";
 				TargetAttributes = {
@@ -138,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98202C741F3DB3C400BC68CC /* PublicArt.json in Resources */,
 				98202C671F3DA43400BC68CC /* LaunchScreen.storyboard in Resources */,
 				98202C641F3DA43400BC68CC /* Assets.xcassets in Resources */,
 				98202C621F3DA43400BC68CC /* Main.storyboard in Resources */,
@@ -151,8 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98202C5F1F3DA43400BC68CC /* ViewController.m in Sources */,
+				98202C5F1F3DA43400BC68CC /* YMAArtPlaceVC.m in Sources */,
 				98202C5C1F3DA43400BC68CC /* AppDelegate.m in Sources */,
+				98202C7A1F3DC42B00BC68CC /* YMAPinAnnotationDetailed.m in Sources */,
 				98202C591F3DA43400BC68CC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
