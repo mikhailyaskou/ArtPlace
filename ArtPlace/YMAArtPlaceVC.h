@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface YMAArtPlaceVC : UIViewController
 
 @end
-
