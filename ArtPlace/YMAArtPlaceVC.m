@@ -65,7 +65,7 @@ static const NSInteger YMAJsonDetailInfo3 = 16;
     NSString *message;
     if ([view.annotation isMemberOfClass:[YMAPinAnnotationDetailed class]]){
         YMAPinAnnotationDetailed *annotation = view.annotation;
-        message = view.annotation.detailedInformation;
+        message = annotation.detailedInformation;
     }
     else {
         message = YMANoDetailsError;
